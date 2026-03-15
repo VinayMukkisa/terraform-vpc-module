@@ -1,5 +1,5 @@
 module "vpc"{
-    source="D:/terraform-vpc/vpc-development"
+    source="git::https://github.com/VinayMukkisa/terraform-vpc-development.git?ref=main"
     # cidr = "10.0.0.0/16"
     # project_name = "roboshop"
     # environment = "dev"
@@ -14,7 +14,6 @@ module "vpc"{
     #database subnet
     database_subnet_cidrs =var.database_subnet_cidrs
     is_peering_required = true
-    
 }
 
 
